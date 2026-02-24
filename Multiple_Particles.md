@@ -68,7 +68,9 @@ C_{social}(i, j)  = \begin{cases}
     0, & \text{else }
 \end{cases}
 $$
-![Quadratic Repulsion]()
+![Quadratic Repulsion](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/Quadratic_Repulsion_func.png)
+**figure 1: shows the Quadratic Repulsion function**
+
 #### Exponential Social Force
 Inspired by Helbing & Molnár, this models psychological repulsion that exists even at moderate distances.
 $$
@@ -115,5 +117,5 @@ isotropic particles tend to take the greediest path and will have to turn when n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzUzNzczNjldfQ==
+eyJoaXN0b3J5IjpbMTAxODA4MDY4N119
 -->
