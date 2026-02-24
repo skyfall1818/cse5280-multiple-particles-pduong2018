@@ -108,7 +108,11 @@ $$
 ## Implementation
 the code and variables used are found in **multiple_particles.ipynb**. Videos will be used based on parameter changes set in the file
 
-
+## Simulations
+### baseline
+#### ani
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)
+Video1: simulation of the baseline map with particles
 
 ## Analysis
 Particles tend to overall stay further away from each other than the isotropic. which requires a range adjustment to fairly compare the social functions.
@@ -122,5 +126,5 @@ isotropic particles tend to take the greediest path and will have to turn when n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMDY4Nzk1OV19
+eyJoaXN0b3J5IjpbLTE5MTYxNTgxMzVdfQ==
 -->
