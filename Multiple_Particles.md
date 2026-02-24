@@ -62,12 +62,14 @@ Isotropic forces assume that the repulsion between two particles depends **only*
 
 #### Quadratic Repulsion (Soft Personal Space)
 Defines a specific radius $R$ of personal space. No force is exerted beyond this radius.
+
 $$
 C_{social}(i, j)  = \begin{cases}
     0.5(R-d_{i,j})^2, & \text{if } d_{i,j} < R \\
     0, & \text{else }
 \end{cases}
 $$
+
 ![Quadratic Repulsion](img_n_vid/Quadratic_Repulsion_func.png)
 **Figure 1: shows the Quadratic Repulsion function**
 
