@@ -6,9 +6,8 @@ The Simulation will run on a 2x2 grid. The grid will consist of multiple walls a
 
 This simulation will tackle two main types of social forces: Isotropic and Anisotropic. **Isotropic** models, which rely purely on Euclidean distance, and **Anisotropic** models, which incorporate velocity-dependent directional bias. we will compare the results and actions and note any patterns associated with one or the other types of forces
 
-<video src="path/to/video.mp4" width="640" height="480" controls>
-https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4
-</video>
+
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)
 
 ## Cost Function Formulation
 The the particle animation are using the standard gradient-descent algorithm to reach their goal:
@@ -116,5 +115,5 @@ isotropic particles tend to take the greediest path and will have to turn when n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY2MjA3Ml19
+eyJoaXN0b3J5IjpbMTE3MjU0MTg3Ml19
 -->
