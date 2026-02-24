@@ -110,7 +110,8 @@ the code and variables used are found in **multiple_particles.ipynb**. Videos wi
 
 ## Simulations
 #### Isotropic
-
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-iso.mp4)
+Video1: simulation of the Baseline map with isotropic particles
 
 #### Anisotropic
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)
@@ -129,5 +130,5 @@ isotropic particles tend to take the greediest path and will have to turn when n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDc3MzMzODVdfQ==
+eyJoaXN0b3J5IjpbNjg1OTIyMDQyXX0=
 -->
