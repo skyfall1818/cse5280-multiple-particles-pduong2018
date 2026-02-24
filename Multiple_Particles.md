@@ -103,6 +103,8 @@ ln(R/d), & 0<d\leq R \\
 0, & d>R
 \end{cases}
 $$
+![Natural_Log_PW](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/natural-log-piece-wise.png)
+**figure 3: shows the Natural Log Function used for wall costs**
 ## Implementation
 the code and variables used are found in **multiple_particles.ipynb**. Videos will be used based on parameter changes set in the file
 
@@ -118,5 +120,5 @@ isotropic particles tend to take the greediest path and will have to turn when n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTU2MjMyXX0=
+eyJoaXN0b3J5IjpbLTE0Mjk5MzI5NDldfQ==
 -->
