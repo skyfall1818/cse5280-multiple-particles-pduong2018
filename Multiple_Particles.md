@@ -76,7 +76,7 @@ Inspired by Helbing & Molnár, this models psychological repulsion that exists e
 $$
 C_{social}(i, j) = A  e^{ -\frac {dij}{B} }
 $$
-Where A and B are arbitrarily set values greater than 0. A controlling the strength of getting too close th
+Where A and B are arbitrarily set values greater than 0. A controlling the cost when getting too close and B controls cost in longer ranges.
 ![Exponential Social Force](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/exponential_social_force_func.png)
 **figure 2: shows the Exponential Social Force function with A =2 and B =3**
 
@@ -118,5 +118,5 @@ isotropic particles tend to take the greediest path and will have to turn when n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQwMTI1MzE3XX0=
+eyJoaXN0b3J5IjpbMTEyNTU2MjMyXX0=
 -->
