@@ -2,12 +2,11 @@
 ## Overview
 This document will provide an analysis of simulating multi-particle systems using social force models within a gradient descent optimization framework. This simulation builds upon the basic principle of singular particle motion following a downward gradient towards a goal, but includes "social" forces between the particles adding another level of complexity.
 
-The Simulation will run on a 2x2 grid. The grid will consist of multiple walls and particles (dots on the simulation). the larger stationary dots will be the goals that the particle will tend to move towards. If there are multiple goals, each particle will have s designated goal they will want to reach. The Idea is to run multiple simulations of positions and wall positions to observe the behavior of the particles.
+The Simulation will run on a 2x2 grid. The grid will consist of multiple walls and particles (dots on the simulation). the larger stationary dots will be the goals that the particle will tend to move towards. If there are multiple goals, each particle will have s designated goal they will want to reach. The Idea is to run multiple simulations of positions and wall positions to observe the behavior of the particles. Each simulation runs at at total of 200 Frames
 
 This simulation will tackle two main types of social forces: Isotropic and Anisotropic. **Isotropic** models, which rely purely on Euclidean distance, and **Anisotropic** models, which incorporate velocity-dependent directional bias. we will compare the results and actions and note any patterns associated with one or the other types of forces
 
-
-[![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)]
+https://github.com/user-attachments/assets/de45c1de-f6b4-44a4-9d42-36a14e98b196
 
 ## Cost Function Formulation
 The the particle animation are using the standard gradient-descent algorithm to reach their goal:
@@ -112,30 +111,41 @@ the code and variables used are found in **multiple_particles.ipynb**. Videos wi
 
 ## Simulations
 #### Isotropic
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-iso.mp4)
-Video: simulation of the ie map with isotropic particles
 
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/zigzag-iso.mp4)
-Video: simulation of the Zigzag map with isotropic particles
 
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/dead-ended-iso.mp4)
-Video: simulation of the Dead-ended map with isotropic particles
+https://github.com/user-attachments/assets/a3abbbb9-cb20-425a-a432-45f22d751084
 
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/symmetric-iso.mp4)
-Video: simulation of the ymmetric map with isotropic particles
+**Video: simulation of the ie map with isotropic particles**
+
+https://github.com/user-attachments/assets/802e325a-adf9-425b-b511-4419e0cbbc96
+
+**Video: simulation of the Zigzag map with isotropic particles**
+
+https://github.com/user-attachments/assets/348d395b-bd07-46d8-bb20-5afa59a51a23
+
+**Video: simulation of the Dead-ended map with isotropic particles**
+
+https://github.com/user-attachments/assets/2ca317b1-b984-4c23-addb-d8b1ea1d5277
+
+**Video: simulation of the ymmetric map with isotropic particles**
 
 #### Anisotropic
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)
-Video: simulation of the a map with anisotropic particles
 
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/zigzag-ani.mp4)
-Video: simulation of the Zigzag  map with anisotropic particles
+https://github.com/user-attachments/assets/8757291d-a10d-47ab-8ddf-c40d3d48209a
 
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/dead-ended-ani.mp4)
-Video: simulation of the Dead-ended map with anisotropic particles
+**Video: simulation of the a map with anisotropic particles**
 
-![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/symmetric-ani.mp4)
-Video8: simulation of the Symmetric map with anisotropic particles
+https://github.com/user-attachments/assets/12368265-fa83-49c3-92f4-76fdd2401907
+
+**Video: simulation of the Zigzag  map with anisotropic particles**
+
+https://github.com/user-attachments/assets/979c7819-7db4-414d-a62b-99c5bb10a1e6
+
+**Video: simulation of the Dead-ended map with anisotropic particles**
+
+https://github.com/user-attachments/assets/7d5d2343-df88-40d2-9fef-96654675526b
+
+**Video8: simulation of the Symmetric map with anisotropic particles**
 
 
 ## Analysis
@@ -143,7 +153,7 @@ Particles tend to overall stay further away from each other than the isotropic. 
 
 Overall the particles interactions behave more greedily in the isotropic method than the anisotropic. In cases where two or more particles meet at the same goal (assuming the particles have the same goal), one particle will overtake the other and take the goal. Anisotropic will spread out evenly as there is no way to reach the goal or the cost will spike due to running into the other particle.
 
-Particles on head on collision tend to find a way to pass each other but the anisotropic particles stop way earlier and their speeds tend to be overall consistent as a result. the isotropic particles run as close as they can before stopping and veering around each other.
+Particles on head on collision tend to find a way to pass each other but the anisotropic particles stop earlier and their speeds tend to be overall consistent as a result. the isotropic particles run as close as they can before stopping and veering around each other.
 
 ## Conclusion
 isotropic particles tend to take the greediest path and will have to turn when necessary. While the anisotropic have to turn earlier and find more open space to maneuver around other particles. Overall, both particles act similar on many different aspects, but when there are a lot of collisions, the anisotropic particles tend to move more smoothly (more consistent speed) around.
