@@ -6,6 +6,9 @@ The Simulation will run on a 2x2 grid. The grid will consist of multiple walls a
 
 This simulation will tackle two main types of social forces: Isotropic and Anisotropic. **Isotropic** models, which rely purely on Euclidean distance, and **Anisotropic** models, which incorporate velocity-dependent directional bias. we will compare the results and actions and note any patterns associated with one or the other types of forces
 
+
+[![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)]
+
 ## Cost Function Formulation
 The the particle animation are using the standard gradient-descent algorithm to reach their goal:
 $$
@@ -65,14 +68,17 @@ C_{social}(i, j)  = \begin{cases}
     0, & \text{else }
 \end{cases}
 $$
+![Quadratic Repulsion](img_n_vid/Quadratic_Repulsion_func.png)
+**Figure 1: shows the Quadratic Repulsion function**
 
 #### Exponential Social Force
 Inspired by Helbing & Molnár, this models psychological repulsion that exists even at moderate distances.
 $$
 C_{social}(i, j) = A  e^{ -\frac {dij}{B} }
 $$
-Where A and B are arbitrarily set values.
-
+Where A and B are arbitrarily set values greater than 0. A controlling the cost when getting too close and B controls cost in longer ranges.
+![Exponential Social Force](img_n_vid/exponential_social_force_func.png)
+**Figure 2: shows the Exponential Social Force function with A =2 and B =3**
 
 ## Anisotropic Models (Velocity-Dependent)
 These particles act strongly when moving towards other particles. They act more in advance based on what direction they are currently moving towards. Here, the dot product between the direction and the direction of the particle is best used to maximize the social penalty. It will act as a predictor, if the particle is on path to another, the function returns a stronger cost function, in which the particle will slow down sooner than just running the isotropic function. (*Note: since this equation is based on direction, when calculating the gradient, the partial derivatives will also need to consider their vector directions*)
@@ -97,8 +103,38 @@ ln(R/d), & 0<d\leq R \\
 0, & d>R
 \end{cases}
 $$
+![Natural_Log_PW](img_n_vid/natural-log-piece-wise.png)
+**Figure 3: shows the Natural Log function used for wall costs**
 ## Implementation
 the code and variables used are found in **multiple_particles.ipynb**. Videos will be used based on parameter changes set in the file
+
+## Simulations
+#### Isotropic
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-iso.mp4)
+Video1: simulation of the Baseline map with isotropic particles
+
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/zigzag-iso.mp4)
+Video2: simulation of the Zigzag map with isotropic particles
+
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/dead-ended-iso.mp4)
+Video3: simulation of the Dead-ended map with isotropic particles
+
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/symmetric-iso.mp4)
+Video4: simulation of the Symmetric map with isotropic particles
+
+#### Anisotropic
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)
+Video5: simulation of the Baseline map with anisotropic particles
+
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/zigzag-ani.mp4)
+Video6: simulation of the Zigzag  map with anisotropic particles
+
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/dead-ended-ani.mp4)
+Video7: simulation of the Dead-ended map with anisotropic particles
+
+![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/symmetric-ani.mp4)
+Video8: simulation of the Symmetric map with anisotropic particles
+
 
 ## Analysis
 Particles tend to overall stay further away from each other than the isotropic. which requires a range adjustment to fairly compare the social functions.
@@ -109,3 +145,4 @@ Particles on head on collision tend to find a way to pass each other but the ani
 
 ## Conclusion
 isotropic particles tend to take the greediest path and will have to turn when necessary. While the anisotropic have to turn earlier and find more open space to maneuver around other particles. Overall, both particles act similar on many different aspects, but when there are a lot of collisions, the anisotropic particles tend to move more smoothly (more consistent speed) around.
+
