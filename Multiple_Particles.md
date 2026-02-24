@@ -76,8 +76,9 @@ Inspired by Helbing & Molnár, this models psychological repulsion that exists e
 $$
 C_{social}(i, j) = A  e^{ -\frac {dij}{B} }
 $$
-Where A and B are arbitrarily set values.
-
+Where A and B are arbitrarily set values greater than 0. A controlling the strength of getting too close th
+![Exponential Social Force](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/exponential_social_force_func.png)
+**figure 2: shows the Exponential Social Force function with A =2 and B =3**
 
 ## Anisotropic Models (Velocity-Dependent)
 These particles act strongly when moving towards other particles. They act more in advance based on what direction they are currently moving towards. Here, the dot product between the direction and the direction of the particle is best used to maximize the social penalty. It will act as a predictor, if the particle is on path to another, the function returns a stronger cost function, in which the particle will slow down sooner than just running the isotropic function. (*Note: since this equation is based on direction, when calculating the gradient, the partial derivatives will also need to consider their vector directions*)
@@ -117,5 +118,5 @@ isotropic particles tend to take the greediest path and will have to turn when n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODA4MDY4N119
+eyJoaXN0b3J5IjpbNjQwMTI1MzE3XX0=
 -->
