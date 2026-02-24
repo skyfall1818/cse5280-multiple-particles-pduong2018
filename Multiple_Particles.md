@@ -111,26 +111,26 @@ the code and variables used are found in **multiple_particles.ipynb**. Videos wi
 ## Simulations
 #### Isotropic
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-iso.mp4)
-Video1: simulation of the Baseline map with isotropic particles
+Video: simulation of the ie map with isotropic particles
 
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/zigzag-iso.mp4)
-Video2: simulation of the Zigzag map with isotropic particles
+Video: simulation of the Zigzag map with isotropic particles
 
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/dead-ended-iso.mp4)
-Video3: simulation of the Dead-ended map with isotropic particles
+Video: simulation of the Dead-ended map with isotropic particles
 
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/symmetric-iso.mp4)
-Video4: simulation of the Symmetric map with isotropic particles
+Video: simulation of the ymmetric map with isotropic particles
 
 #### Anisotropic
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/baseline-ani.mp4)
-Video5: simulation of the Baseline map with anisotropic particles
+Video: simulation of the a map with anisotropic particles
 
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/zigzag-ani.mp4)
-Video6: simulation of the Zigzag  map with anisotropic particles
+Video: simulation of the Zigzag  map with anisotropic particles
 
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/dead-ended-ani.mp4)
-Video7: simulation of the Dead-ended map with anisotropic particles
+Video: simulation of the Dead-ended map with anisotropic particles
 
 ![Multiple Particle Simulation](https://github.com/skyfall1818/cse5280-multiple-particles-pduong2018/blob/main/img_n_vid/symmetric-ani.mp4)
 Video8: simulation of the Symmetric map with anisotropic particles
@@ -145,3 +145,6 @@ Particles on head on collision tend to find a way to pass each other but the ani
 
 ## Conclusion
 isotropic particles tend to take the greediest path and will have to turn when necessary. While the anisotropic have to turn earlier and find more open space to maneuver around other particles. Overall, both particles act similar on many different aspects, but when there are a lot of collisions, the anisotropic particles tend to move more smoothly (more consistent speed) around.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI2MjQ3MTA5NF19
+-->
