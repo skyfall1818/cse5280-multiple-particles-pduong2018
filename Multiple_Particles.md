@@ -148,5 +148,5 @@ Particles on head on collision tend to find a way to pass each other but the ani
 ## Conclusion
 isotropic particles tend to take the greediest path and will have to turn when necessary. While the anisotropic have to turn earlier and find more open space to maneuver around other particles. Overall, both particles act similar on many different aspects, but when there are a lot of collisions, the anisotropic particles tend to move more smoothly (more consistent speed) around.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDk3NjcxMl19
+eyJoaXN0b3J5IjpbMTMxMjc1NjYzNF19
 -->
